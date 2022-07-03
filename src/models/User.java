@@ -6,7 +6,9 @@ public class User extends Personne{
 
 
     // Constructeur#######
-    public User(String login, String password) {
+    
+    public User(int id, String prenom, String nom, String role, int etat, String login, String password) {
+        super(id, prenom, nom, role, etat);
         this.login = login;
         this.password = password;
     }
